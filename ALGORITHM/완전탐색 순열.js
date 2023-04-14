@@ -4,7 +4,11 @@ const getPermutations = function (arr, selectNumber) {
   // 1개씩 택할 때, 바로 모든 배열의 원소 return
 
   arr.forEach((fixed, index, origin) => {
+    console.log("fixed: ", fixed);
+    console.log("index: ", index);
+    console.log("origin: ", origin);
     const rest = [...origin.slice(0, index), ...origin.slice(index + 1)];
+    console.log("rest: ", rest);
     // 해당하는 fixed를 제외한 나머지 배열
 
     const permutations = getPermutations(rest, selectNumber - 1);
