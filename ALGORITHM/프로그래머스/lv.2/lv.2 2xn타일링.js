@@ -9,12 +9,3 @@ function solution(n) {
 
   return dp[n - 1] % 1000000007;
 }
-
-let n = 5;
-console.log(solution(n));
-
-n = 10302;
-console.log(solution(n));
-
-n = 123456;
-console.log(solution(n));
